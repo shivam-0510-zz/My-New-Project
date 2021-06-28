@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body{
+    scroll-behavior: smooth;
+    height: 15000px;
+}
+.heading{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.img{
+    width: 600px;
+    height: 300px;
+    margin-left: 300px;
+    margin-top: 15px;
+}
+.img1{
+    width: 600px;
+    height: 300px;
+    margin-left: 400px;
+    margin-top: 15px;
+}
+.img2{
+    width: 400px;
+    height: 400px;
+    margin-left: 450px;
+    margin-top: 15px;
+}
+.img3{
+    width: 700px;
+    height: 350px;
+    margin-left: 350px;
+    margin-top: 15px;
+}
+.img4{
+    width: 500px;
+    height:150px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+.img5{
+    width: 600px;
+    height:100px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+.about{
+    font-family: 'Lato', sans-serif;
+    font-family: 100;
+    font-size: 30px;
+    margin-left: 335px;
+    margin-top: 60px;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    margin-left: 335px;
+    margin-top: -10px;
+    width: 700px;
+    font-size: 25px;
+}
+.i{
+    font-family: 'Lato', sans-serif;
+    margin-left: 335px;
+    margin-top: 10px;
+    width: 700px;
+    font-size: 25px; 
+}
+.p{
+    font-family: 'Lato', sans-serif;
+    margin-left: 335px;
+    margin-top: 10px;
+    width: 700px;
+    font-size: 30px; 
+    font-weight: 1000;
+}
+h5{
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+   text-align: center;
+    margin-top: 15px;
+}
+.sub-heading{
+    font-family: 'Lato',sans-serif;
+    font-size: 17px;
+    margin-left: 335px;
+    margin-top: 15px;
+}
+code{
+    margin-left: 335px;
+    margin-top: 15px;
+    background-color: rgb(223, 223, 223);
+    padding-left: 20px;
+    padding-right: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.name{
+    font-family: 'Lato', sans-serif;
+    margin-left: 335px;
+    margin-top: 30px;
+    width: 700px;
+    font-size: 25px;
+}
+
+
+ 

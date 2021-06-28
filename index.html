@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beginner's Guide to Git and Github</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<p>
+    <h1 class="heading">The Beginner's Guide to Git and Github</h1>
+    <img src="cover-pic.jpeg" alt="git" class="img">
+    <h2 class="about">What is Git?</h2>
+    <p>Git is a free, open-source version control software. It was created by Linus Torvalds in 2005. This tool is a version control system that was initially developed to work with several developers on the Linux kernel.</p>
+    <p>This basically means that Git is a content tracker. So Git can be used to store content — and it is mostly used to store code because of the other features it provides.</p>
+    <p>Real life projects generally have multiple developers working in parallel. So they need a version control system like Git to make sure that there are no code conflicts between them.</p>
+    <p>Also, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of their code.</p>
+    <p>The branch system in Git allows developers to work individually on a task (For example: One branch -> One task OR One branch -> One developer). Basically think of Git as a small software application that controls your code base, if you’re a developer.</p>
+    <img src="vcs.png" alt="work" class="img">
+    <h5>Shows how git works</h5>
+
+    <h2 class="about">Git Repositories</h2>
+    <p>If we want to start using Git, we need to know where to host our repositories. </p>
+    <p>A repository (or “Repo” for short) is a project that contains multiple files. In our case a repository will contain code-based files. </p>
+    <p>There are two ways you can host your repositories. One is online (on the cloud) and the second is offline (self-installed on your server). </p>
+    <p>There are three popular Git hosting services: GitHub (owned by Microsoft), GitLab (owned by GitLab) and BitBucket. We’ll use GitHub as our hosting service.</p>
+
+    <h2 class="about">Before using Git we should know why we need it</h2>
+    <h3 class="sub-heading">Git makes it easy to contribute to open source projects</h3>
+    <p>Nearly every open-source project uses GitHub to manage their projects. Using GitHub is free if your project is open source, and it includes a wiki and issue tracker that makes it easy to include more in-depth documentation and get feedback about your project.</p><br>
+    <p>If you want to contribute, you just fork (get a copy of) a project, make your changes, and then send the project a pull request using GitHub's web interface. This pull request is your way of telling the project you're ready for them to review your changes.</p>
+    <h3 class="sub-heading">Documentation</h3>
+    <p>By using GitHub, you make it easier to get excellent documentation. Their help section and guides have articles for nearly any topic related to Git that you can think of.</p>
+    <h3 class="sub-heading">Integration options</h3>
+    <p>GitHub can integrate with common platforms such as Amazon and Google Cloud, with services such as Code Climate to track your feedback, and can highlight syntax in over 200 different programming languages.</p>
+    <h3 class="sub-heading">Track changes in your code across versions</h3>
+    <p>When multiple people collaborate on a project, it’s hard to keep track of revisions — who changed what, when, and where those files are stored. </p>
+    <p>GitHub takes care of this problem by keeping track of all the changes that have been pushed to the repository. </p>
+    <p>Much like using Microsoft Word or Google Drive, you can have a version history of your code so that previous versions are not lost with every iteration. It’s easy to come back to the previous version and contribute your work.</p>
+    <h3 class="sub-heading">Showcase your work</h3>
+    <p>Are you a developer who wishes to attract recruiters? GitHub is the best tool you can rely on for this. </p>
+    <p>Today, when searching for new recruits for their projects, most companies look at GitHub profiles. If your profile is available, you will have a higher chance of being recruited even if you are not from a great university or college.</p>
+
+    <h2 class="about">Now we’ll learn how to use Git & GitHub</h2>
+    <h3 class="sub-heading">GitHub account creation</h3>
+    <p>To create your account, you need to go to  <a href="https://github.com/">Github</a> 's website and fill out the registration form.</p>
+    <img src="Screenshot (18).png" alt="github" class="img1">
+    <h5>GitHub official web page</h5>
+
+    <h2 class="about">Git Installation</h2>
+    <p>Now we need to install Git's tools on our computer. We’ll use CLI to communicate with GitHub.</p>
+    <p>For Ubuntu:</p>
+    <p>1. First, update your packages.</p>
+    <code>sudo apt update</code>
+    <p class="name">2. Next, install Git and GitHub with apt-get</p>
+    <code>sudo apt-get install git</code>
+    <p class="name">3.Finally, verify that Git is installed correctly</p>
+    <code>git --version</code>
+    <p class="name">Run the following commands with your information to set a default username and email when you’re going to save your work.</p>
+    <code>git config --global user.name "SHIVAM GUPTA"</code>
+    <p></p>
+    <code>git config --global user.email "example@mail.com"</code>
+
+    <h2 class="about">Working with GitHub projects</h2>
+    <h3 class="sub-heading">We’ll work with GitHub projects in two ways.</h3>
+    <p>Type 1: Create the repository, clone it to your PC, and work on it.(Recommended)</p>
+    <p class="p">Type 1 involves creating a totally fresh repository on GitHub, cloning it to our computer, working on our project, and pushing it back.</p>
+    <p>Create a new repository by clicking the “new repository” button on the GitHub web page</p>
+    <img src="Screenshot (19).png" alt="github" class="img2">
+    <p class="i">Pick a name for your first repository, add a small description, check the ‘Initialize this repository with a README’ box, and click on the “Create repository” button.</p>
+    <img src="Screenshot (20).png" alt="github" class="img3">
+    <p class="i">Well done! Your first GitHub repository is created.</p>
+    <p>Your first mission is to get a copy of the repository on your computer. To do that, you need to “clone” the repository on your computer. </p>
+    <p>To clone a repository means that you're taking a repository that’s on the server and cloning it to your computer – just like downloading it. On the repository page, you need to get the “HTTPS” address.</p>
+    <img src="Screenshot (21).png" alt="github" class="img3">
+    <p class="i">Once you have the address of the repository, you need to use your terminal. Use the following command on your terminal. When you’re ready you can enter this:</p>
+    <code>git clone [HTTPS ADDRESS]</code>
+    <p class="name">This command will make a local copy of the repository hosted at the given address.</p>
+    <img src="Screenshot (22).png" alt="" class="img4">
+    <h5>Output message of “git clone” command</h5>
+    <p>Now, your repository is on your computer. You need to move in it with the following command.</p>
+    <code>cd [NAME OF REPOSITORY]</code>
+    <img src="Screenshot (23).png" alt="" class="img4">
+    <p class="i">As you can see in the above picture, my repository name is “My-New-Project” and this command made me go to that specific directory.</p>
+    <p>NOTE: When you clone, Git will create a repository on your computer. If you want, you can access your project with the computer user interface instead using the above ‘cd’ command on the terminal.</p>
+    <p>Now, in that folder we can create files, work on them, and save them locally. To save them in a remote place — like GitHub – we have do a process called a “commit”. To do this, get back to your terminal. If you closed it, like I previously stated, use the ‘cd’ command.</p>
+    <code>cd [NAME OF REPOSITORY]</code>
+    <p class="i">Now, in the terminal, you’re in your repository directory. There are 4 steps in a commit: ‘status’ , ‘add’ , ‘commit’ and ‘push’. All the following steps must be performed within your project. Let's go through them one by one.</p>
+    <p>1. “status”: The first thing you need to do is to check the files you have modified. To do this, you can type the following command to make a list of changes appear.</p>
+    <code>git status</code>
+    <img src="Screenshot (24).png" alt="" class="img4">
+    <p class="i">2. “add”: With the help of the change list, you can add all files you want to upload with the following command,</p>
+    <code>git add [FILENAME] [FILENAME] [...]</code>
+    <p class="i">In our case, we’ll add a simple HTML file</p>
+    <code>git add sample.html</code>
+    <img src="Screenshot (25).png" alt="" class="img4">
+    <p class="i">3. “commit”: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.</p>
+    <img src="Screenshot (26).png" alt="" class="img4">
+    <p class="i">4. “push”: Now we can put our work on GitHub. To do that we have to ‘push’ our files to Remote. Remote is a duplicate instance of our repository that lives somewhere else on a remote server. To do this, we must know the remote’s name (Mostly remote is named origin). To figure out that name, type the following command.</p>
+    <code>git remote</code>
+    <img src="Screenshot (27).png" alt="" class="img5">
+    <p class="i">As you can see in the above image, it says that our remote’s name is origin. Now we can safely ‘push’ our work by the following command.</p>
+    <code>git push origin master</code>
+    <p class="i">Now, if we go to our repository on the GitHub web page, we can see the sample.html file that we’ve pushed to remote — GitHub!</p>
+    <img src="Screenshot (28).png" alt="" class="img3">
+    <p class="i">NOTE: Sometimes when you’re using Git commands in the terminal, it can lead you to the VIM text editor (a CLI based text-editor). So to get rid of it, you have to type</p>
+    <code>:q</code>
+    <p class="i">and ENTER.</p>
+    <img src="explanation.png" alt="" class="img3">
+    <h5>Describes how pull & push work</h5>
+    <p>Pulling is the act of receiving from GitHub.</p>
+    <p>Pushing is the act of sending to GitHub.</p>
+    <p class="p">Type 2: Work on your project locally then create the repository on GitHub and push it to remote.</p>
+    <p>Type 2 lets you make a fresh repository from an existing folder on our computer and send that to GitHub. In a lot of cases you might have actually already made something on your computer that you want to suddenly turn into a repository on GitHub.</p>
+    <p>I will explain this to you with a Survey form web project that I made earlier that wasn’t added to GitHub.</p>
+    <p>As I already mentioned, when executing any Git commands, we have to make sure that we are in the correct directory in the terminal.</p>
+    <p>By default, any directory on our computer is not a Git repository – but we can turn it into a Git repository by executing the following command in the terminal.</p>
+    <code>git init</code>
+    <img src="Screenshot (29).png" alt="" class="img5">
+    <p class="i">After converting our directory to a Git repository, the first thing we need to do is to check the files we have by using the following command.</p>
+    <code>git status</code>
+    <img src="Screenshot (30).png" alt="" class="img4">
+    <p class="i">So there are two files in that directory that we need to “add” to our Repo.</p>
+    <code>git add [FILENAME] [FILENAME] [...]</code>
+    <p class="i">NOTE: To “add” all of the files in our Repository we can use the following command:.</p>
+    <code>git add .</code>
+    <p class="i">After the staging area (the add process) is complete, we can check whether the files are successfully added or not by executing the git status</p>
+    <p>If those particular files are in green like the below picture, you’ve done your work!</p>
+    <img src="Screenshot (31).png" alt="" class="img3">
+    <p class="i">Then we have to “commit” with a description in it.</p>
+    <code>git commit -m "Added 2 files"</code>
+    <img src="Screenshot (32).png" alt="" class="img4">
+    <p class="i">If my repository started on GitHub and I brought it down to my computer, a remote is already going to be attached to it (Type 1). But if I’m starting my repository on my computer, it doesn’t have a remote associated with it, so I need to add that remote (Type 2).</p>
+    <p>So to add that remote, we have to go to GitHub first. Create a new repository and name it whatever you want to store it in GitHub. Then click the “Create repository” button.</p>
+    <p>NOTE: In Type 2, Please don’t initialize the repository with a README file when creating a new repository on the GitHub web page.</p>
+    <img src="Screenshot (33).png" alt="" class="img3">
+    <p class="i">After clicking the “Create repository” button you’ll find the below image as a web page.</p>
+    <img src="Screenshot (34).png" alt="" class="img3">
+    <p class="i">Copy the HTTPS address. Now we’ll create the remote for our repository.</p>
+    <code>git remote add origin [HTTPS ADDRESS]</code>
+    <p class="i">After executing this command, we can check whether we have successfully added the remote or not by the following command</p>
+    <code>git remote</code>
+    <p class="i">And if it outputs “origin” you’ve added the remote to your project.</p>
+    <p>NOTE: Just remember we can state any name for the remote by changing the name “origin”. For example:</p>
+    <code>git remote add [REMOTE NAME] [HTTPS ADDRESS]</code>
+    <p class="i">Now, we can push our project to GitHub without any problems!</p>
+    <code>git push origin master</code>
+    <p class="i">After completing these steps one by one, if you go to GitHub you can find your repository with the files!</p>
+    <img src="Screenshot (35).png" alt="" class="img3">
+    <h2 class="about">Conclusion</h2>
+    <p>Thank you everyone for reading. I just explained the basics of Git and GitHub. I strongly encourage you all to read more related articles on Git and GitHub. I hope this article helped you.</p>
+    <p>Thank you.</p>
+</body>
+</html>
